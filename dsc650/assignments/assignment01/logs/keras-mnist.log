@@ -1,0 +1,114 @@
+/home/totennacht/venv/bin/python /home/totennacht/Bellevue/dsc650/examples/mnist_mlp.py
+2021-03-15 16:57:22.630490: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+60000 train samples
+10000 test samples
+2021-03-15 16:57:23.794178: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-03-15 16:57:23.796361: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-03-15 16:57:23.829545: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-15 16:57:23.830100: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:0a:00.0 name: GeForce RTX 3090 computeCapability: 8.6
+coreClock: 1.695GHz coreCount: 82 deviceMemorySize: 23.70GiB deviceMemoryBandwidth: 871.81GiB/s
+2021-03-15 16:57:23.830111: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-03-15 16:57:23.835644: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-03-15 16:57:23.835676: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-03-15 16:57:23.838913: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-03-15 16:57:23.840103: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-03-15 16:57:23.852656: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-03-15 16:57:23.854620: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-03-15 16:57:23.855143: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-03-15 16:57:23.855245: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-15 16:57:23.856259: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-15 16:57:23.857327: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-03-15 16:57:23.857572: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-03-15 16:57:23.858333: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-03-15 16:57:23.858438: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-15 16:57:23.859390: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:0a:00.0 name: GeForce RTX 3090 computeCapability: 8.6
+coreClock: 1.695GHz coreCount: 82 deviceMemorySize: 23.70GiB deviceMemoryBandwidth: 871.81GiB/s
+2021-03-15 16:57:23.859408: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-03-15 16:57:23.859424: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-03-15 16:57:23.859436: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-03-15 16:57:23.859446: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-03-15 16:57:23.859457: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-03-15 16:57:23.859467: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-03-15 16:57:23.859477: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-03-15 16:57:23.859487: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-03-15 16:57:23.859550: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-15 16:57:23.860523: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-15 16:57:23.861429: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-03-15 16:57:23.861601: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-03-15 16:57:24.284714: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-03-15 16:57:24.284736: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0
+2021-03-15 16:57:24.284741: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N
+2021-03-15 16:57:24.285122: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-15 16:57:24.285619: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-15 16:57:24.286107: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-15 16:57:24.286563: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 21754 MB memory) -> physical GPU (device: 0, name: GeForce RTX 3090, pci bus id: 0000:0a:00.0, compute capability: 8.6)
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense (Dense)                (None, 512)               401920
+_________________________________________________________________
+dropout (Dropout)            (None, 512)               0
+_________________________________________________________________
+dense_1 (Dense)              (None, 512)               262656
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 512)               0
+_________________________________________________________________
+dense_2 (Dense)              (None, 10)                5130
+=================================================================
+Total params: 669,706
+Trainable params: 669,706
+Non-trainable params: 0
+_________________________________________________________________
+2021-03-15 16:57:24.492024: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-03-15 16:57:24.493907: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3699635000 Hz
+Epoch 1/20
+2021-03-15 16:57:24.722044: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-03-15 16:57:25.168665: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-03-15 16:57:25.171790: I tensorflow/stream_executor/cuda/cuda_blas.cc:1838] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+469/469 [==============================] - 2s 2ms/step - loss: 0.4444 - accuracy: 0.8587 - val_loss: 0.1075 - val_accuracy: 0.9670
+Epoch 2/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.1061 - accuracy: 0.9675 - val_loss: 0.0854 - val_accuracy: 0.9726
+Epoch 3/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.0708 - accuracy: 0.9795 - val_loss: 0.0716 - val_accuracy: 0.9788
+Epoch 4/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.0559 - accuracy: 0.9826 - val_loss: 0.0732 - val_accuracy: 0.9801
+Epoch 5/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.0496 - accuracy: 0.9852 - val_loss: 0.0790 - val_accuracy: 0.9788
+Epoch 6/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.0402 - accuracy: 0.9874 - val_loss: 0.0724 - val_accuracy: 0.9818
+Epoch 7/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.0343 - accuracy: 0.9893 - val_loss: 0.0872 - val_accuracy: 0.9796
+Epoch 8/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.0330 - accuracy: 0.9902 - val_loss: 0.0810 - val_accuracy: 0.9828
+Epoch 9/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.0283 - accuracy: 0.9916 - val_loss: 0.0779 - val_accuracy: 0.9848
+Epoch 10/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.0263 - accuracy: 0.9924 - val_loss: 0.0853 - val_accuracy: 0.9828
+Epoch 11/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.0225 - accuracy: 0.9936 - val_loss: 0.0862 - val_accuracy: 0.9844
+Epoch 12/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.0219 - accuracy: 0.9935 - val_loss: 0.0834 - val_accuracy: 0.9838
+Epoch 13/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.0215 - accuracy: 0.9938 - val_loss: 0.1023 - val_accuracy: 0.9827
+Epoch 14/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.0193 - accuracy: 0.9942 - val_loss: 0.0933 - val_accuracy: 0.9836
+Epoch 15/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.0160 - accuracy: 0.9949 - val_loss: 0.1001 - val_accuracy: 0.9835
+Epoch 16/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.0198 - accuracy: 0.9942 - val_loss: 0.1023 - val_accuracy: 0.9840
+Epoch 17/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.0166 - accuracy: 0.9950 - val_loss: 0.1119 - val_accuracy: 0.9844
+Epoch 18/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.0178 - accuracy: 0.9945 - val_loss: 0.1153 - val_accuracy: 0.9828
+Epoch 19/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.0162 - accuracy: 0.9952 - val_loss: 0.1119 - val_accuracy: 0.9842
+Epoch 20/20
+469/469 [==============================] - 1s 2ms/step - loss: 0.0157 - accuracy: 0.9961 - val_loss: 0.1119 - val_accuracy: 0.9842
+Test loss: 0.11194346845149994
+Test accuracy: 0.9842000007629395
+
+Process finished with exit code 0
