@@ -11,6 +11,9 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.optimizers import RMSprop
 
+import time
+start_time = time.time()
+
 batch_size = 128
 num_classes = 10
 epochs = 20
@@ -52,3 +55,5 @@ history = model.fit(x_train, y_train,
 score = model.evaluate(x_test, y_test, verbose=0)
 print('Test loss:', score[0])
 print('Test accuracy:', score[1])
+
+print("--- %s seconds ---" % (time.time() - start_time))
