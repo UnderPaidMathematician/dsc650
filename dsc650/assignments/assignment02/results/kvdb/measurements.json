@@ -1,0 +1,26 @@
+{
+  "dyer": {
+    "visit_id": 619,
+    "person_id": "dyer",
+    "quantity": "rad",
+    "reading": 9.82
+  },
+  "lake": {
+    "visit_id": 734,
+    "person_id": "lake",
+    "quantity": "sal",
+    "reading": 0.05
+  },
+  "pb": {
+    "visit_id": 734,
+    "person_id": "pb",
+    "quantity": "rad",
+    "reading": 8.41
+  },
+  "roe": {
+    "visit_id": 752,
+    "person_id": "roe",
+    "quantity": "sal",
+    "reading": 41.6
+  }
+}
